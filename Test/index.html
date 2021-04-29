@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- initially built from just looking at https://mkorostoff.github.io/1-pixel-wealth/ -->
+<!-- other horizontal: https://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html -->
+<!-- alos looked here: https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6 -->
+<!-- looked at this for fixed nav https://stackoverflow.com/questions/32148359/fixed-header-with-horizontal-scrolling-content -->
+
+<head>
+  <meta charset="utf-8">
+  <title>SIxD_Compostable_Packaging_23Apr21</title>
+
+  <script type="text/javascript" src="https://d3js.org/d3.v6.js"></script>
+  <!-- <script src="lodash.js"></script> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+  <link rel="stylesheet" href="sixd_style.css" />
+
+  <style type="text/css">
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- <main> -->
+  <div class="navholder">
+    <div class="navbar"><a href="#mainIntro" class="timeNavLink">Intro</a>  :  <a href="#subIntro" class="timeNavLink">Start</a>  :  <a href="#year100" class="timeNavLink">100</a>  :  <a href="#year200" class="timeNavLink">200</a>  :  <a href="#year300" class="timeNavLink">300</a>  :  <a href="#year400" class="timeNavLink">400</a>  :  <a href="#year500" class="timeNavLink">500</a>  :  <a href="#year600" class="timeNavLink">600</a>  :  <a href="#year700" class="timeNavLink">700</a>  :  <a href="#year800" class="timeNavLink">800</a>  :  <a href="#year900" class="timeNavLink">900</a>  :
+    </div>
+    <!-- jump to a part of the scroll: https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html/24739173 -->
+  </div>
+
+  <div class="container">
+
+    <div class="intro" id="mainIntro">
+      <h class="introHead">A Long…<br>Long View <br /> of Food Packaging</h>
+      <p>Our food sustains us, but what about its packaging? Once we have dined or snacked, what do we do with the tins, bags or boxes that deliver that sustenance? Does it feed the earth, coming back to feed us, or does it pile up and interfere?</p>
+      <p>The infographic at right explores a few packaging options in the world today, within the framework of time. Each tick at the bottom is one year, or 36 pixels.</p>
+      <p>It is often claimed that plastic will last 1,000 years, though it's hard to know that for certain. (The truth is we expect it may never really leave us.) </p>
+    </div>
+
+
+    <div class="timeContainer">
+      <div class="timeHolder">
+        <div class="bHead">Aluminum</div>
+      </div>
+
+      <div class="timeline" width="36250px" height="200px">
+        <!-- Really wide div????????? -->
+
+        <div class="timeRow">
+
+          <div class="timeUnits" id="subIntro">
+            <p class="bodyText">Recycled over and over with no loss in quality, the material in the aluminum can you recycle is back on the shelf in 60 days.
+            </p>
+          </div>
+
+          <!-- RECYCLING 0 -->
+          <div class="timeUnits" id="year000" style="width: 250px; padding-left:0px;">
+            <!-- <p class="bodyText">svg showing 'lifetime' of can </p> -->
+            <svg width="100" height="180" id="Alum1"></svg>
+          </div>
+
+          <div class="timeUnits" style="width: 3350px">
+            <!-- Remainder of years 1-100 -->
+          </div>
+
+          <!-- RECYCLING 1 -->
+          <div class="timeUnits" id="year100" style="width: 250px">
+            Years 101-200
+          </div>
+
+          <div class="timeUnits" style="width: 3350px">
+          </div>
+
+          <!-- RECYCLING 2 -->
+          <div class="timeUnits" id="year200" style="width: 3600px;">
+            Years 201-300
+          </div>
+
+          <!-- <div class="timeUnits" style="width: 3350px;">
+          </div> -->
+
+          <!-- RECYCLING 3 -->
+          <div class="timeUnits" id="year300" style="width: 250px">
+            Years 301-400
+          </div>
+
+          <div class="timeUnits" style="width: 1550px">
+          </div>
+
+          <div class="timeUnits" style="width: 250px">
+            And may, somewhat ironically, end up in the aluminum cans we’ve been tracking up here.
+          </div>
+
+          <div class="timeUnits" style="width: 150px">
+            <img style="width: 150px; height:180px; object-fit:none; object-position: 0px 105px;" src="SIxD_FP_Art/OpenTUNA.png">
+          </div>
+
+          <!-- <div class="timeUnits" style="width: 1100px;">
+            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/Clouds200.png">
+          </div> -->
+
+          <div class="timeUnits" style="width: 1400px">
+            Spacer
+          </div>
+
+          <!-- RECYCLING 4 -->
+          <div class="timeUnits" id="year400" style="width: 250px">
+            Years 401-500
+          </div>
+
+          <div class="timeUnits" style="width: 3350px;">
+          </div>
+
+          <!-- RECYCLING 5 -->
+          <div class="timeUnits" id="year500" style="width: 250px">
+            Years 501-600
+          </div>
+
+          <div class="timeUnits" style="width: 3350px;">
+          </div>
+
+          <!-- RECYCLING 6 -->
+          <div class="timeUnits" id="year600" style="width: 250px">
+            Years 601-700
+          </div>
+
+          <div class="timeUnits" style="width: 3350px;">
+          </div>
+
+          <!-- RECYCLING 7 -->
+          <div class="timeUnits" id="year700" style="width: 250px">>
+            Years 701-800
+          </div>
+
+          <div class="timeUnits" style="width: 3350px;">
+          </div>
+
+          <!-- RECYCLING 8 -->
+          <div class="timeUnits" id="year800" style="width: 250px">
+            Years 801-900
+          </div>
+
+          <div class="timeUnits" style="width: 3350px;">
+          </div>
+
+          <!-- RECYCLING 9 -->
+          <div class="timeUnits" id="year900" style="width: 250px">
+            Years 901-1000
+          </div>
+
+          <div class="timeUnits" style="width: 3350px;">
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- same thing again, to see how it stacks? -->
+
+
+      <!-- COMPOSTING START -->
+
+      <div class="timeHolder">
+        <div class="bHead">Compostable Bags</div>
+      </div>
+
+      <div class="timeline" width="36250px" height="200px">
+        <!-- Really wide div????????? -->
+        <div class="timeRow" id="compostTime">
+          <!-- second ID of subintro????? -->
+          <div class="timeUnits" id="subIntro">
+            <p class="bodyText">In industrial conditions, these bags compost in 6 months and get back to the soil, ready to grow more bags. </p>
+          </div>
+
+
+          <!-- COMPOSTING 0 -->
+
+          <div class="timeUnits" style="width: 250px; padding-left:0px;">
+            <svg width="100" height="180" id="Compo1"></svg>
+          </div>
+
+          <div class="timeUnits" style="width: 3350px">
+            And if left on their own, they will naturally decompose…
+          </div>
+
+          <!-- COMPOSTING 1 -->
+          <div class="timeUnits" style="width: 900px">
+            <!-- Composting 1 -->
+          </div>
+
+          <div class="timeUnits" style="width: 800px">
+            Like potatoes<br>
+            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/Potatoes.png">
+          </div>
+
+          <div class="timeUnits" style="width: 1900px">
+            <div style="height: 90px; width:400px;">Or corn, which we have plenty of...<br></div>
+            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/CornOne.png">
+            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/CornOne.png">
+            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/CornOne.png">
+          </div>
+
+
+          <!-- COMPOSTING 2 -->
+
+          <div class="timeUnits" style="width: 1800px; padding-right: 0px;">
+            <div style="height: 90px; width:400px;">Let’s leave that to run through some cycles of composting, growing, manufacturing, purchase consumption and back to the beginning…<br>
+We may need this space…<br></div>
+<img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/CornOne.png">
+<img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/CornOne.png">
+<img style="width: 510px; object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/CornOne.png">
+          </div>
+
+          <div class="timeUnits" style="width: 1800px">
+            <!-- Composting 2 -->
+          </div>
+
+
+
+          <!-- COMPOSTING 3 -->
+          <div class="timeUnits" style="width: 1100px;">
+            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/Clouds200.png">
+          </div>
+          <div class="timeUnits" style="width: 250px">
+            Those fish are then caught through commercial fishing…
+          </div>
+
+
+          <div class="timeUnits" style="width: 250px">
+
+            <img style="width: 250px; height: 180px; object-fit:none; object-position: 0px 33px;" src="SIxD_FP_Art/SXFPShip1.png">
+          </div>
+
+          <div class="timeUnits" style="width: 2000px;">
+            <img style="width: 1500px; object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/Clouds200_2.png">
+          </div>
+
+          <!-- COMPOSTING 4 -->
+
+          <div class="timeUnits" style="width: 250px">
+            Perhaps now is a good time to add some temporal context to the seemingly endless band below.
+          </div>
+
+          <div class="timeUnits" style="width: 1100px;">
+            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/Clouds200.png">
+          </div>
+
+          <div class="timeUnits" style="width: 2250px;">
+
+          </div>
+
+
+          <!-- COMPOSTING 5 -->
+
+          <div class="timeUnits" style="width: 3600px">
+            Here's the current worldwide expected human lifespan (about 72 years)<br>
+            <div style="width: 2592px; height: 30px; background-color: black;"></div>
+            <!-- <svg id="lifespan" width:  -->
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <!-- </div> -->
+
+      <div class="timeHolder">
+        <div class="bHead">Plastic</div>
+      </div>
+
+      <div class="timeline" width="36250px" height="200px">
+        <div class="timeRow">
+          <div class="timeUnits" id="subIntro">
+            <p class="bodyText">Discarded plastic, on the other hand, is expected to last 1,000 years… or longer.
+            </p>
+          </div>
+
+          <!-- PLASTICS 0 -->
+          <div class="plasticUnits" style="width: 3600px;">
+            <!-- <img style="width: 300px; height: 180px; object-fit:none; object-position: 30px 30px;" src="SIxD_FP_Art/Fish_Test.png"> -->
+          </div>
+
+          <!-- PLASTICS 1 -->
+          <div class="plasticUnits" style="width: 3600px;">
+          </div>
+
+          <!-- PLASTICS 2 -->
+          <div class="plasticUnits" style="width: 250px;">
+            Plastic, of course, comes from petroleum, the decayed remains of creatures.
+          </div>
+
+          <div class="plasticUnits" style="width: 600px;">
+            Like dinosaurs.
+          </div>
+
+          <div class="plasticUnits" style="width: 250px;">
+            And yes, (some) plastic can be, and is, recycled…
+          </div>
+
+          <div class="plasticUnits" style="width: 800px;">
+          </div>
+
+          <div class="plasticUnits" style="width: 250px;">
+          About <br>
+          <span class ="largeNumber">9%</span>
+          </div>
+
+          <div class="plasticUnits" style="width: 1450px;">
+          </div>
+
+          <!-- PLASTICS 3 -->
+          <div class="plasticUnits" style="width: 200px;">
+
+            <p>If they are in the ocean, that means they are in fish, who ingest the microplastics, which leach into them as well...</p>
+          </div>
+          <div class="plasticUnits" style="width: 1600px;">
+            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/SchoolFish.png">
+          </div>
+          <div class="plasticUnits" style="width: 1400px;">
+            <img style="width: 1400px; height: 180px; object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/MicroPlusBag.png">
+          </div>
+
+          <div class="plasticUnits" style="width: 400px;">
+            <p>Microplastics are also found in birds, who pick them up and feed them to their young.</p>
+          </div>
+
+
+          <!-- PLASTICS 4 -->
+          <div class="plasticUnits" style="width: 250px;">
+            In 2016, a shield was placed over the Chernobyl nuclear reactor in Russia to contain the radiation from that 1986 accident.
+          </div>
+
+          <div class="plasticUnits" style="width: 500px;">
+            <img style="width: 700px; height: 180px; object-fit:none; object-position: 10px 40px;" src="SIxD_FP_Art/Chernobyl.png">
+          </div>
+
+          <div class="plasticUnits" style="width: 250px;">
+            It is designed to last 400 years — a remarkable amount of time for humans to plan ahead.
+          </div>
+
+          <div class="plasticUnits" style="width: 200px;">
+          </div>
+
+          <div class="plasticUnits" style="width: 250px;">
+            That was about 1200 pixels (33.3 years) ago…
+          </div>
+
+          <div class="plasticUnits" style="width: 500px;">
+            <!-- spacer -->
+          </div>
+
+          <div class="plasticUnits" style="width: 250px;">
+            And we're not yet halfway through this timeline…
+          </div>
+
+          <div class="plasticUnits" style="width: 1400px;">
+          </div>
+
+        <!-- PLASTICS 5 -->
+        <div class="plasticUnits" style="width: 3600px;">
+        </div>
+
+        <!-- PLASTICS 6 -->
+        <div class="plasticUnits" style="width: 3600px;">
+        </div>
+
+        <!-- PLASTICS 7 -->
+        <div class="plasticUnits" style="width: 3600px;">
+        </div>
+
+        <!-- PLASTICS 8 -->
+        <div class="plasticUnits" style="width: 3600px;">
+        </div>
+
+        <!-- PLASTICS 9 -->
+        <div class="plasticUnits" style="width: 3600px;">
+        </div>
+
+        <!-- <h class="bHead">Plastic Time</h> -->
+        <!-- <p class="subIntro">Vestibulum purus eros, ornare at magna ac, ornare efficitur felis. Suspendisse potenti. Suspendisse potenti. Phasellus ultrices nulla eget felis dapibus dignissim. Donec in est vitae.
+      </p> -->
+      </div>
+
+      <!-- end of time container -->
+    </div>
+    <div class="timeAxis" id="ticks">
+      <div class="bHead">Years</div>
+    </div>
+
+    <!-- end of larger container -->
+  </div>
+
+  <!-- <hr> -->
+
+
+  </div>
+  <div class="creditholder">
+    <div class="credit">©2021 Michael L Kelly : TK</div>
+  </div>
+  <!-- non-map small multiples grid can be found in AP_Home_Proto_24Mar.html
+  Some of their values are stil in this script, which I should probably make a separate file anyway-->
+
+  <!-- </main> -->
+</body>
+
+<script type="text/javascript">
+  const alum1 = d3.select("#Alum1")
+
+  alum1.append("rect")
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("width", 6)
+    .attr("height", 180)
+    .attr("fill", "silver");
+
+  // alum1.append("rect")
+  //   .attr("x", 6)
+  //   .attr("y", 0)
+  //   .attr("width", 6)
+  //   .attr("height", 90)
+  //   .attr("fill", "silver");
+
+  const compo1 = d3.select("#Compo1")
+
+  compo1.append("rect")
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("width", 18)
+    .attr("height", 180)
+    .attr("fill", "chocolate");
+
+  // compo1.append("rect")
+  //   .attr("x", 18)
+  //   .attr("y", 0)
+  //   .attr("width", 18)
+  //   .attr("height", 90)
+  //   .attr("fill", "chocolate");
+
+
+  // Time axis at bottom
+  // Declare chart width and height
+
+  const svgW = 36000;
+  const svgH = 12;
+
+
+  // Data as well as data-related variables: max for x and y and padding
+
+  const dataset = [
+
+    [200, 40],
+    [170, 100],
+    [400, 60],
+    [100, 150],
+    [410, 300],
+    [120, 220],
+    [310, 260],
+    [400, 110],
+    [500, 90],
+    [270, 600],
+    [530, 380],
+    [475, 475]
+
+  ];
+
+  // const maxX = d3.max(50000);
+  // const maxY = d3.max(dataset, d => d[1]);
+
+  // const padding = 50;
+
+
+  // Create responsive scales for x and y
+  const newXScale = d3.scaleLinear()
+    .domain([0, 1000])
+    .range([0, svgW]);
+
+  // const newYScale = d3.scaleLinear()
+  //                  .domain([0, maxY])
+  //                  .range([svgH-padding, padding]);
+
+
+  // (NEW) Establish our bottom and left axis. Each axis needs the relevant scale applied, and ticks (if using)
+
+  const bottomAxis = d3.axisBottom()
+    .scale(newXScale)
+    .ticks(1000)
+    .tickSize(12);
+  // .tickValues([0, 100, 300, 500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20000, 21000, 22000, 23000, 24000, 25000, 26000, 27000, 28000, 29000, 30000, 31000, 32000, 33000, 34000, 35000, 36000]);
+  // .ticks(100);
+
+  // const leftAxis = d3.axisLeft()
+  //                  .scale(newYScale)
+  //                  //.tickValues([0, 100, 300, 600]);
+  //                  .ticks(10);
+
+
+  // SVG
+
+  const ticked = d3.select("#ticks")
+    .append("svg")
+    .attr("width", 36400)
+    .attr("height", 30);
+
+
+  // Use "circle", and add them to our SVG to visualize our data.
+
+  // svg.selectAll("circle")
+  //     .data(dataset)
+  //     .enter()
+  //     .append("circle")
+  //     .attr("cx", d => newXScale(d[0]))
+  //     .attr("cy", d => newYScale(d[1]))
+  //     .attr("r", 6)
+  //     .attr("fill", "pink");
+
+
+  // (NEW) Implement the bottom (x) and left (y) axis
+
+  //Implement bottom axis
+  ticked.append("g")
+    .attr("class", "axis") //creates a class which we will use for styling
+    .attr("transform", "translate(264,0)") //this makes the axis appear at the bottom of the chart--pushes it down to the bottom
+    // .attr("transform", "translate(0," + (svgH -padding) + ")") //this makes the axis appear at the bottom of the chart--pushes it down to the bottom
+    .call(bottomAxis); // now we are calling our the bottomAxis function that we generated above
+
+
+  //Implement left axis
+  // svg.append("g")
+  //     .attr("class", "axis") //creates a class which we will use for styling
+  //     .attr("transform", "translate(" + padding + ",0)") //this makes the axis appear at the left of the chart--and includes the padding so we can see it.
+  //     .call(leftAxis); // now we are calling our the leftAxis function that we generated above
+</script>
+
+</html>
