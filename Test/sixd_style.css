@@ -1,0 +1,249 @@
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    /* background-image: linear-gradient(180deg, #FFBF00, #F2F0E6);
+        background-repeat: no-repeat; */
+    margin: auto;
+    display: block;
+    min-height: 100%;
+    /* margin: 0px 0px 0px 0px; */
+    background-color: snow;
+    width: 36900px;
+  }
+
+  /* main {
+        width: "10000px";
+      } */
+  .navbar {
+    /* width: "1000px"; */
+    height: 12px;
+    background-color: olive;
+    color: snow;
+    display: table-row;
+    position: fixed;
+    right: 0;
+    left: 0;
+    /* text-align: right; */
+    padding: 8px 30px 10px 30px;
+    z-index: 1;
+  }
+
+  .timeNavLink {
+    color: yellow;
+    text-decoration: none;
+  }
+
+
+
+  /* probably a better way of doing this than the above and below... */
+  .navholder {
+    height: 30px;
+    background-color: olive;
+  }
+
+  .creditholder {
+    /* width: "1000px"; */
+    height: 30px;
+    background-color: olive;
+    /* text-align: right; */
+    padding: 0px 30px 0px 30px;
+  }
+
+  .credit {
+    font-size: 11px;
+    margin-block-end: 0em;
+    /* padding: 0px 0px 0px 30px; */
+    color: snow;
+    display: table-row;
+    position: fixed;
+    right: 0;
+    left: 0;
+  }
+
+  /* maybe merriwether for font? it's a bit natural*/
+  .introHead {
+    font-size: 60px;
+    color: tomato;
+    font-family: serif;
+    line-height: 1.15;
+  }
+
+  .intro {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    color: darkolivegreen;
+    width: 540px;
+    /* height: 600px; */
+    padding: 12px 102px 18px 30px;
+    line-height: 1.35;
+  }
+
+  .line {
+    fill: none;
+    stroke: #426789;
+    stroke-width: 2px;
+  }
+
+  /* this holds the intro and all time elements */
+  .container {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid maroon;
+    border-bottom: 1px solid maroon;
+    padding: 0px 0px 10px 0px;
+  }
+
+  /* this holds all of time */
+  .timeContainer {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 36264px;
+    /* padding: 10px 0px 10px 0px; */
+  }
+
+  /* this holds the headers     */
+  .timeHolder {
+    display: inline-flex;
+    height: 18px;
+  }
+
+  /* this holds the timerow and units */
+  .timeline {
+    /* margin-top: 30px; */
+    flex: 0 0 auto;
+    /* width: 10000px; */
+    font-family: sans-serif;
+    overflow: visible;
+    display: inline-flex;
+    border-bottom: 1px solid maroon;
+    padding: 5px 0px 5px 0px;
+    /* display: flex;
+        flex-direction: row; */
+  }
+
+  /* this holds the intro and timeunits */
+  .timeRow {
+    display: inline-flex;
+    /* scroll-snap-type: x mandatory;
+    scroll-padding: 0px;
+    overflow-x: scroll; */
+    /* min-height: 100%; */
+    /* background-color: green; */
+  }
+
+  /* an approach to make the padding included in the overall size */
+  /* https://medium.com/frontendshortcut/margin-vs-padding-c1fc8ea8bfaf */
+
+  /* this is the default sitting inside the timeline - gets adjusted by IDs */
+  .timeUnits {
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    display: block;
+    width: 600px;
+    height: 180px;
+    padding: 0px 30px 12px 24px;
+    margin-block-start: 0em;
+    font-family: serif;
+    font-size:13pt;
+    line-height: 1.2;
+    color: darkolivegreen;
+  }
+
+  .bHead {
+    font-family: sans-serif;
+    font-size: 13px;
+    color: tomato;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-block-start: 0em;
+    display: table-row;
+    position: sticky;
+    left: 0;
+    padding: 6px 24px 0px 24px;
+  }
+
+  #subIntro {
+    width: 264px;
+    font-size: 14px;
+    text-transform: none;
+    line-height: 1.5;
+    margin-block-start: 0em;
+    padding: 0px 24px 12px 24px;
+    /* background-color: wheat; */
+    /* display: table-row;
+        position: sticky;
+        right: 0;
+        left: 0; */
+  }
+
+  /* sticky may have compatability issues??? */
+  .bodyText {
+    font-size: 14px;
+    text-transform: none;
+    line-height: 1.5;
+    margin-block-start: 0.2em;
+    /* padding-left: 24px; */
+    color: darkolivegreen;
+  }
+
+  .largeNumber {
+    font-size:56pt;
+    color: blue;
+  }
+
+
+
+  /* https://www.w3schools.com/css/css_align.asp */
+  .plasticUnits {
+    /* flex: 1 1 600px; */
+    /* text-align: center; */
+    box-sizing: border-box;
+    display: block;
+    width: 600px;
+    height: 180px;
+    /* display: flex; */
+    /* justify-content: center;
+        align-items: center; */
+    background-color: goldenrod;
+    padding: 6px 30px 12px 24px;
+    /* text-transform: uppercase; */
+    margin-block-start: 0em;
+    font-size:13pt;
+    line-height: 1.2;
+    color: white;
+  }
+
+  /* .plasticUnits p{
+    color: white;
+  } */
+
+  .plasticTime {
+    width: 36000px;
+  }
+
+  #compostTime {
+    /* background-color: yellow; */
+  }
+
+  .timeAxis {
+    width: 36000px;
+    height: 30px;
+    padding: 0 0 0 0;
+  }
+  .axis path{
+    stroke: maroon;
+  }
+  .axis line{
+    stroke: maroon;
+  }
+  .axis text{
+    font-family: "Helvetica", sans-serif;
+    font-size: 9px;
+  }
+
+
+  /* flex - just for reference
+      https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
