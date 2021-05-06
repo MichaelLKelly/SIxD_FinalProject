@@ -8,7 +8,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>SIxD_Compostable_Packaging_23Apr21</title>
+  <title>SIxD_Compostable_Packaging_23Apr21_2</title>
 
   <script type="text/javascript" src="https://d3js.org/d3.v6.js"></script>
   <!-- <script src="lodash.js"></script> -->
@@ -27,7 +27,8 @@
 
   <!-- <main> -->
   <div class="navholder">
-    <div class="navbar"><a href="#mainIntro" class="timeNavLink">Intro</a>  :  <a href="#subIntro" class="timeNavLink">Start</a>  :  <a href="#year100" class="timeNavLink">100</a>  :  <a href="#year200" class="timeNavLink">200</a>  :  <a href="#year300" class="timeNavLink">300</a>  :  <a href="#year400" class="timeNavLink">400</a>  :  <a href="#year500" class="timeNavLink">500</a>  :  <a href="#year600" class="timeNavLink">600</a>  :  <a href="#year700" class="timeNavLink">700</a>  :  <a href="#year800" class="timeNavLink">800</a>  :  <a href="#year900" class="timeNavLink">900</a>  :
+    <div class="navbar"><a href="#mainIntro" class="timeNavLink">Intro</a> : <a href="#subIntro" class="timeNavLink">Start</a> : <a href="#year100" class="timeNavLink">100</a> : <a href="#year200" class="timeNavLink">200</a> : <a href="#year300"
+        class="timeNavLink">300</a> : <a href="#year400" class="timeNavLink">400</a> : <a href="#Outro" class="timeNavLink">500</a> :
     </div>
     <!-- jump to a part of the scroll: https://stackoverflow.com/questions/24739126/scroll-to-a-specific-element-using-html/24739173 -->
   </div>
@@ -35,10 +36,13 @@
   <div class="container">
 
     <div class="intro" id="mainIntro">
-      <h class="introHead">A Long…<br>Long View <br /> of Food Packaging</h>
+      <h class="introHead">A Long…<br>Long View of <br>Food Packaging</h>
       <p>Our food sustains us, but what about its packaging? Once we have dined or snacked, what do we do with the tins, bags or boxes that deliver that sustenance? Does it feed the earth, coming back to feed us, or does it pile up and interfere?</p>
-      <p>The infographic at right explores a few packaging options in the world today, within the framework of time. Each tick at the bottom is one year, or 36 pixels.</p>
-      <p>It is often claimed that plastic will last 1,000 years, though it's hard to know that for certain. (The truth is we expect it may never really leave us.) </p>
+      <p>The infographic at right explores a few packaging options in the world today, within the framework of time. Each tick at the bottom is one year, or 36 pixels. Except where noted, we'll look at that first tick as year zero for decomposition,
+        recycling and other time measurements.</p>
+      <p>It runs for 500 years, which is the estimated decomposition time for some plastic materials, like toothbrushes and disposable diapers. You can jump ahead or back, using the navigation bar at the top, but you're encouraged to scroll through
+        the entire piece, and let the scale of the experience tell the story.</p>
+      <!-- <p>It is often claimed that plastic will last 1,000 years, though it's hard to know that for certain. (The truth is we expect it may never really leave us.) </p> -->
     </div>
 
 
@@ -47,48 +51,81 @@
         <div class="bHead">Aluminum</div>
       </div>
 
-      <div class="timeline" width="36250px" height="200px">
+      <div class="timeline" width="18250px" height="200px">
         <!-- Really wide div????????? -->
 
         <div class="timeRow">
 
           <div class="timeUnits" id="subIntro">
-            <p class="bodyText">Recycled over and over with no loss in quality, the material in the aluminum can you recycle is back on the shelf in 60 days.
+            <p class="bodyText">Recycled over and over with no loss in quality, the material in the aluminum can you recycle is back on the shelf in 60 days. <br><span class="textNote">(That's the bar to the right.)</span>
             </p>
           </div>
 
           <!-- RECYCLING 0 -->
-          <div class="timeUnits" id="year000" style="width: 250px; padding-left:0px;">
-            <!-- <p class="bodyText">svg showing 'lifetime' of can </p> -->
-            <svg width="100" height="180" id="Alum1"></svg>
+
+
+          <div id="year000" style="width: 6px; background-color: silver;">
           </div>
 
-          <div class="timeUnits" style="width: 3350px">
+          <div class="timeUnits" style="width: 44px;">
+          </div>
+
+          <div class="timeUnits" style="width: 250px;">
+            <div style="position: relative; z-index: 3;">Perhaps you stocked up on cans of tuna for the coming month…</div>
+            <img style="height: 180px; object-fit:none; object-position: 0px 39px; position: relative; z-index: 0;" src="SIxD_FP_Art/TunaStack2.png">
+          </div>
+
+          <div class="timeUnits" style="width: 350px">
+
+          </div>
+
+          <div class="timeUnits" style="width: 350px">
+
+          </div>
+
+
+          <div class="timeUnits" style="width: 300px;">
+            Luckily, we recycle about <br>
+            <span class="largeNumber">34.9%</span><br>
+            of our aluminum worldwide.*<br>
+            <span class="textNote">(But we could probably do better…)</span>
+          </div>
+
+
+          <div class="timeUnits" style="width: 2300px">
             <!-- Remainder of years 1-100 -->
           </div>
 
+
+
+
           <!-- RECYCLING 1 -->
           <div class="timeUnits" id="year100" style="width: 250px">
-            Years 101-200
           </div>
 
-          <div class="timeUnits" style="width: 3350px">
+          <div class="timeUnits" style="width: 2750px">
           </div>
+
+
+          <div class="timeUnits" style="width: 350px">
+
+          </div>
+
+
+          <div class="timeUnits" style="width: 250px">
+
+            And aluminum that is almost endlessly recyclable...
+          </div>
+
+
+
 
           <!-- RECYCLING 2 -->
-          <div class="timeUnits" id="year200" style="width: 3600px;">
-            Years 201-300
+          <div class="timeUnits" id="year200" style="width: 300px;">
+            We’re about 200 years in and the aluminum can you recycled a while back has been repurposed 1,200 times! The same goes for any can of soda you might have had that day or another.
           </div>
 
-          <!-- <div class="timeUnits" style="width: 3350px;">
-          </div> -->
-
-          <!-- RECYCLING 3 -->
-          <div class="timeUnits" id="year300" style="width: 250px">
-            Years 301-400
-          </div>
-
-          <div class="timeUnits" style="width: 1550px">
+          <div class="timeUnits" style="width: 1500px">
           </div>
 
           <div class="timeUnits" style="width: 250px">
@@ -96,64 +133,89 @@
           </div>
 
           <div class="timeUnits" style="width: 150px">
-            <img style="width: 150px; height:180px; object-fit:none; object-position: 0px 105px;" src="SIxD_FP_Art/OpenTUNA.png">
+            <img style="width: 150px; height:180px; object-fit:none; object-position: 0px 105px;" src="SIxD_FP_Art/OpenTUNA2.png">
           </div>
 
-          <!-- <div class="timeUnits" style="width: 1100px;">
-            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/Clouds200.png">
-          </div> -->
 
           <div class="timeUnits" style="width: 1400px">
-            Spacer
           </div>
+
+
+          <!-- RECYCLING 3 -->
+
+
+          <div class="timeUnits" id="year300" style="width: 3000px">
+          </div>
+
+
+          <div style="width: 6px; background-color: silver;">
+          </div>
+
+
+          <div class="timeUnits" style="width: 244px;">
+
+            Or 1,800 of those can cycles
+          </div>
+
+          <div class="timeUnits" style="width: 350px">
+          </div>
+
+
+
+
 
           <!-- RECYCLING 4 -->
-          <div class="timeUnits" id="year400" style="width: 250px">
-            Years 401-500
+          <div class="timeUnits" id="year400" style="width: 750px">
           </div>
 
-          <div class="timeUnits" style="width: 3350px;">
+          <div class="timeUnits" style="width: 100px">
+            <!-- But… -->
           </div>
 
-          <!-- RECYCLING 5 -->
-          <div class="timeUnits" id="year500" style="width: 250px">
-            Years 501-600
+
+          <div class="timeUnits" style="width: 1350px;">
+            <!-- create class here for inline divs -->
+            <div class="multiText" style="width: 1350px; position: absolute; z-index: 3;">
+              <div class="subMulti" style="width: 250px">
+                That’s nowhere near the age <br>of the pyramids of Giza… <br><span class="textNote">(The equivalent of 9 of <br>this entire timeline)</span>
+              </div>
+
+              <div class="subMulti" style="width: 200px">
+                The Great Wall… <br><span class="textNote">(about 6 timelines)
+              </div>
+
+              <div class="subMulti" style="width: 180px">
+                The Parthenon… <br><span class="textNote">(5 timelines)</span>
+              </div>
+
+              <div class="subMulti" style="width: 250px">
+                or The Temple of Kukulcán <br>at Chichen Itza <br><span class="textNote">(2-plus timelines)</span>
+              </div>
+            </div>
+            <img style="height: 180px; object-fit:none; object-position: 0px 55px; position: relative; z-index: 0;" src="SIxD_FP_Art/Structures.png">
+
           </div>
 
-          <div class="timeUnits" style="width: 3350px;">
+          <div class="timeUnits" style="width: 400px;">
           </div>
 
-          <!-- RECYCLING 6 -->
-          <div class="timeUnits" id="year600" style="width: 250px">
-            Years 601-700
+
+
+
+          <div class="timeUnits" style="width: 750px;">
           </div>
 
-          <div class="timeUnits" style="width: 3350px;">
+          <div class="timeUnits" style="width: 244px;">
+
+            Or in small steps, <br>like what we consume…
           </div>
 
-          <!-- RECYCLING 7 -->
-          <div class="timeUnits" id="year700" style="width: 250px">>
-            Years 701-800
+
+
+
+          <div style="width: 6px; background-color: silver;">
           </div>
 
-          <div class="timeUnits" style="width: 3350px;">
-          </div>
-
-          <!-- RECYCLING 8 -->
-          <div class="timeUnits" id="year800" style="width: 250px">
-            Years 801-900
-          </div>
-
-          <div class="timeUnits" style="width: 3350px;">
-          </div>
-
-          <!-- RECYCLING 9 -->
-          <div class="timeUnits" id="year900" style="width: 250px">
-            Years 901-1000
-          </div>
-
-          <div class="timeUnits" style="width: 3350px;">
-          </div>
 
         </div>
 
@@ -168,60 +230,104 @@
         <div class="bHead">Compostable Bags</div>
       </div>
 
-      <div class="timeline" width="36250px" height="200px">
+      <div class="timeline" width="18250px" height="200px">
         <!-- Really wide div????????? -->
         <div class="timeRow" id="compostTime">
           <!-- second ID of subintro????? -->
           <div class="timeUnits" id="subIntro">
-            <p class="bodyText">In industrial conditions, these bags compost in 6 months and get back to the soil, ready to grow more bags. </p>
+            <p class="bodyText">In industrial conditions, these bags compost in 6 months and get back to the soil, ready to 'grow' more bags. <br><span class="textNote">(This bar to the right.)</span></p>
           </div>
 
 
           <!-- COMPOSTING 0 -->
 
-          <div class="timeUnits" style="width: 250px; padding-left:0px;">
-            <svg width="100" height="180" id="Compo1"></svg>
+
+          <div style="width: 18px; background-color: chocolate;">
           </div>
 
-          <div class="timeUnits" style="width: 3350px">
-            And if left on their own, they will naturally decompose…
+          <div class="timeUnits" style="width: 32px; padding-left:0px;">
           </div>
+
+          <div class="timeUnits" style="width: 250px">
+            <div style="position: relative; z-index: 3;">Maybe a snack for your dog in a compostable bag…</div>
+            <img style="height: 180px; object-fit:none; object-position: 40px 10px; position: relative; z-index: 0;" src="SIxD_FP_Art/DogFood.png">
+          </div>
+
+          <div class="timeUnits" style="width: 700px">
+
+          </div>
+
+          <div class="timeUnits" style="width: 250px">
+            A compostable bag, on the other hand, automatically degrades (unless it is buried so deep it gets no oxygen).
+          </div>
+
+
+          <div class="timeUnits" style="width: 250px">
+            The outside of this package is probably made of paper. Ideally this is recycled or part of a sustainable planting cycle. Either way, trees contribute to your pakaging.
+          </div>
+
+
+          <div class="timeUnits" style="width: 400px">
+            <img style="height: 180px; object-fit:none; object-position: 0px 5px; position: relative; z-index: 0;" src="SIxD_FP_Art/paperTrees.png">
+          </div>
+
+          <div class="timeUnits" style="width: 250px">
+            But paper is not ideal for keeping food fresh, so bioplastics are used to line the interior. These are made from sources that will easily break down when the bag is composted…
+          </div>
+
+          <div class="timeUnits" style="width: 400px">
+            Sources like potatoes…<br>
+
+            <img style="height: 180px; object-fit:none; object-position: 0px 80px; position: relative; z-index: 0;" src="SIxD_FP_Art/Potatoes.png">
+
+          </div>
+
+          <div class="timeUnits" style="width: 1050px">
+
+            <div class="multiText" style="position: absolute; z-index: 3;">
+              <div class="subMulti" style="height: 90px; width:400px;">Or corn...<br></div>
+
+              <div class="subMulti" style="height: 90px; width:300px;">Both of these are durable, fast growing, plentiful — and have been around for thousands of years (in a good way).<br></div>
+            </div>
+            <img style="height: 180px; object-fit:none; object-position: 0px 29px; position: relative; z-index: 0;" src="SIxD_FP_Art/longCornCloud.png">
+
+          </div>
+
+
+
 
           <!-- COMPOSTING 1 -->
-          <div class="timeUnits" style="width: 900px">
+          <div class="timeUnits" style="width: 1800px; padding-right: 0px;">
+            <div style="height: 90px; width:400px; position: absolute; z-index: 3;">Let’s leave that to run through some cycles of composting, growing, manufacturing, purchase, consumption and back to the beginning…<br>
+              We may need this space…<br></div>
+            <img style="height: 180px; object-fit:none; object-position: 0px 29px; position: relative; z-index: 0;" src="SIxD_FP_Art/longerCornCloud.png">
+          </div>
+
+          <div class="timeUnits" style="width: 450px">
             <!-- Composting 1 -->
           </div>
 
-          <div class="timeUnits" style="width: 800px">
-            Like potatoes<br>
-            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/Potatoes.png">
+          <div class="timeUnits" style="width: 250px">
+            <div class="position: absolute; z-index: 3;">All sorts of helpful, useful things are made using plastics — like the bins that collect compost.</div>
+            <img style="width: 200px; height: 180px; object-fit:none; object-position: 0px 25px; position: relative; z-index: 0;" src="SIxD_FP_Art/CompBin3.png">
           </div>
 
-          <div class="timeUnits" style="width: 1900px">
-            <div style="height: 90px; width:400px;">Or corn, which we have plenty of...<br></div>
-            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/CornOne.png">
-            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/CornOne.png">
-            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/CornOne.png">
+          <div class="timeUnits" style="width: 450px">
+            <!-- Composting 1 -->
           </div>
+
+          <div class="timeUnits" style="width: 250px">
+            Not when we have bioplastics that can be returned to the earth and continue a cycle…
+          </div>
+
+          <div class="timeUnits" style="width: 400px">
+            <!-- Composting 1 -->
+          </div>
+
+
 
 
           <!-- COMPOSTING 2 -->
-
-          <div class="timeUnits" style="width: 1800px; padding-right: 0px;">
-            <div style="height: 90px; width:400px;">Let’s leave that to run through some cycles of composting, growing, manufacturing, purchase consumption and back to the beginning…<br>
-We may need this space…<br></div>
-<img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/CornOne.png">
-<img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/CornOne.png">
-<img style="width: 510px; object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/CornOne.png">
-          </div>
-
-          <div class="timeUnits" style="width: 1800px">
-            <!-- Composting 2 -->
-          </div>
-
-
-
-          <!-- COMPOSTING 3 -->
           <div class="timeUnits" style="width: 1100px;">
             <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/Clouds200.png">
           </div>
@@ -232,34 +338,90 @@ We may need this space…<br></div>
 
           <div class="timeUnits" style="width: 250px">
 
-            <img style="width: 250px; height: 180px; object-fit:none; object-position: 0px 33px;" src="SIxD_FP_Art/SXFPShip1.png">
+            <img style="width: 250px; height: 180px; object-fit:none; object-position: 0px 33px;" src="SIxD_FP_Art/SXFPShipGrey.png">
           </div>
 
-          <div class="timeUnits" style="width: 2000px;">
-            <img style="width: 1500px; object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/Clouds200_2.png">
+          <div class="timeUnits" style="width: 1050px;">
+            <img style="width: 1000px; object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/Clouds200_3.png">
           </div>
 
-          <!-- COMPOSTING 4 -->
+          <div class="timeUnits" style="width: 250px;">
+            Microplastics are also found in birds, who pick them up and feed them to their young.
+          </div>
 
+          <div class="timeUnits" style="width: 700px;">
+          </div>
+
+
+          <!-- COMPOSTING 3 -->
           <div class="timeUnits" style="width: 250px">
             Perhaps now is a good time to add some temporal context to the seemingly endless band below.
           </div>
 
-          <div class="timeUnits" style="width: 1100px;">
-            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/Clouds200.png">
-          </div>
-
-          <div class="timeUnits" style="width: 2250px;">
-
-          </div>
-
-
-          <!-- COMPOSTING 5 -->
-
-          <div class="timeUnits" style="width: 3600px">
-            Here's the current worldwide expected human lifespan (about 72 years)<br>
-            <div style="width: 2592px; height: 30px; background-color: black;"></div>
+          <div class="timeUnits" style="width: 2750px">
+            Here's the current worldwide expected human lifespan (about 72 years).
+            <div style="width: 2592px; height: 30px; color: white; background-color: darkolivegreen;"></div>
             <!-- <svg id="lifespan" width:  -->
+          </div>
+
+
+          <div style="width: 18px; background-color: chocolate;">
+          </div>
+
+          <div class="timeUnits" style="width: 232px">
+            Or 600 of those bag composting cycles.
+          </div>
+
+          <div class="timeUnits" style="width: 350px">
+          </div>
+
+
+
+
+          <!-- COMPOSTING 4 -->
+          <div class="timeUnits" style="width: 650px">
+          </div>
+
+          <div class="timeUnits" style="width: 200px">
+            BUT…
+          </div>
+
+
+          <div class="timeUnits" style="width: 1000px">
+          </div>
+
+
+          <div class="timeUnits" style="width: 450px; border-left: white solid 2px;">
+            <div style="width: 240px; position: absolute; z-index: 3;">
+              Meanwhile, Methuselah, the oldest known living tree in the world, is almost 10 timelines old and sits in the White Mountains of Califronia.
+            </div>
+            <img style="width: 450px; height: 180px; object-fit:none; object-position: 250px 10px; position: relative; z-index: 0;" src="SIxD_FP_Art/Bristle.png">
+
+          </div>
+
+
+          <div class="timeUnits" style="width: 450px; border-left: white solid 2px;">
+            <div style="width: 240px; position: absolute; z-index: 3;">
+              And Jaya Sri Maha Bodhi, a sapling from the tree under which Buddha attained enlightenment, is over 4.5 timelines old and going strong in Sri Lanka. It’s the oldest tree with a known human-planting date.
+            </div>
+            <img style="width: 450px; height: 180px; object-fit:none; object-position: 260px 50px; position: relative; z-index: 0;" src="SIxD_FP_Art/Bodhi.png">
+
+          </div>
+
+
+
+          <div class="timeUnits" style="width: 250px;">
+            So it’s entirely possible that the resilience of nature and the ingenuity of humanity can combine to help us all endure.
+          </div>
+
+          <div class="timeUnits" style="width: 350px">
+          </div>
+
+          <div class="timeUnits" style="width: 232px">
+            Or how we package it.
+          </div>
+
+          <div style="width: 18px; background-color: chocolate;">
           </div>
 
 
@@ -273,129 +435,223 @@ We may need this space…<br></div>
         <div class="bHead">Plastic</div>
       </div>
 
-      <div class="timeline" width="36250px" height="200px">
+      <div class="timeline" width="18250px" height="200px">
         <div class="timeRow">
           <div class="timeUnits" id="subIntro">
-            <p class="bodyText">Discarded plastic, on the other hand, is expected to last 1,000 years… or longer.
+            <p class="bodyText">Discarded plastic, on the other hand, is expected to last much longer.<br><span class="textNote">(As seen in this bar.)</span>
             </p>
           </div>
 
           <!-- PLASTICS 0 -->
-          <div class="plasticUnits" style="width: 3600px;">
-            <!-- <img style="width: 300px; height: 180px; object-fit:none; object-position: 30px 30px;" src="SIxD_FP_Art/Fish_Test.png"> -->
+          <div class="plasticUnits" style="width: 50px;">
           </div>
+
+          <div class="plasticUnits" style="width: 250px;">
+            <div class="position: absolute; z-index: 3;">And added a bottle of water, as you were caught out on a hot day.</div>
+            <img style="width: 200px; height: 180px; object-fit:none; object-position: 45px 10px; position: relative; z-index: 0;" src="SIxD_FP_Art/WaterBottle.png">
+          </div>
+
+          <div class="plasticUnits" style="width: 100px;">
+          </div>
+
+          <div class="plasticUnits" style="width: 250px;">
+            For the sake of example, it was all placed in a plastic bag — which is located here, around 20 years into the timeline. That's about how long it will take to decompose.
+          </div>
+
+
+          <div class="plasticUnits" style="width: 2000px; background-color: none; background-image: linear-gradient(to right, gold, tan);">
+
+            <img style="height: 180px; object-fit:none; object-position: 0px 20px; position: relative; z-index: 0;" src="SIxD_FP_Art/PlasticBag.png">
+          </div>
+
+          <div class="plasticUnits" style="width: 950px; background-color: tan;">
+            <img style="height: 180px; object-fit:none; object-position: 0px 20px; position: relative; z-index: 0;" src="SIxD_FP_Art/FlatBags.png">
+          </div>
+
 
           <!-- PLASTICS 1 -->
-          <div class="plasticUnits" style="width: 3600px;">
+          <div class="plasticUnits" style="width: 250px; background-color: tan;">
+            Plastic, of course, comes from various sources, including petroleum, the remains of ancient organisms…
           </div>
 
-          <!-- PLASTICS 2 -->
-          <div class="plasticUnits" style="width: 250px;">
-            Plastic, of course, comes from petroleum, the decayed remains of creatures.
+          <div class="plasticUnits" style="width: 600px; background-color: tan;">
+            <div style="position: absolute; z-index: 3;">But not dinosaurs.</div>
+            <img style="height: 180px; object-fit:none; object-position: 0px 15px; position: relative; z-index: 0;" src="SIxD_FP_Art/Dino.png">
+
           </div>
 
-          <div class="plasticUnits" style="width: 600px;">
-            Like dinosaurs.
-          </div>
-
-          <div class="plasticUnits" style="width: 250px;">
+          <div class="plasticUnits" style="width: 250px; background-color: tan;">
             And yes, (some) plastic can be, and is, recycled…
           </div>
 
-          <div class="plasticUnits" style="width: 800px;">
+          <div class="plasticUnits" style="width: 700px; background-color: tan;">
           </div>
 
-          <div class="plasticUnits" style="width: 250px;">
-          About <br>
-          <span class ="largeNumber">9%</span>
+          <div class="plasticUnits" style="width: 250px; background-color: tan;">
+            About <br>
+            <span class="largeNumber">9%</span>
           </div>
 
-          <div class="plasticUnits" style="width: 1450px;">
+          <div class="plasticUnits" style="width: 550px; background-color: tan;">
           </div>
+
+          <div class="plasticUnits" style="width: 1000px; background-color: none; background-image: linear-gradient(to right, tan, paleturquoise);">
+
+            <div style="width: 220px; position: absolute; z-index: 3;">
+              But maybe takeout doesn’t have to be one of them?
+            </div>
+            <img style="height: 100px; object-fit:none; object-position: 0px 60px; position: relative; z-index: 2;" src="SIxD_FP_Art/Clamshell.png"><br>
+            <img style="height: 60px; object-fit:none; object-position: 0px 0px; position: relative; z-index: 0;" src="SIxD_FP_Art/Clamshell.png">
+          </div>
+
+
+          <!-- PLASTICS 2 -->
+          <div class="plasticUnits" style="width: 350px; background-color: paleturquoise;">
+            But if you drank it with a plastic straw, that’s just decmposing around now (we’ll get to the soda can rings in a while) and contributing to the tons and tons of microplastics (tiny technofossils under 5mm) that litter the earth.
+
+          </div>
+
+          <div class="plasticUnits" style="width: 1350px; background-color: paleturquoise;">
+            <div style="width: 350px; position: absolute; z-index: 3;">
+              If they make their way to the ocean — and many do — that means they are likely in fish, who ingest them, absorbing their chemicals in the process.
+            </div>
+
+            <img style="object-fit:none; object-position: 0px 0px; position: relative; z-index: 0;" src="SIxD_FP_Art/SchoolFish2.png">
+          </div>
+
+
+          <div class="plasticUnits" style="width: 150px; background-color: paleturquoise;">
+          </div>
+
+
+
+
+          <div class="plasticUnits" style="width: 1150px; background-color: paleturquoise;">
+            <div style="width: 250px; position: absolute; z-index: 3;">
+              We know a plastic bag tossed at the beginning of this graphic 'only' took 20 years to break down, and hopefully 250 years down the line we won’t be adding to them.
+            </div>
+
+            <img style="width: 1400px; height: 180px; object-fit:none; object-position: 0px 0px; position: relative; z-index: 0;" src="SIxD_FP_Art/MicroBagRing.png">
+          </div>
+
+          <div class="plasticUnits" style="width: 250px; background-color: paleturquoise;">
+
+          </div>
+
+          <div class="plasticUnits" style="width: 250px; background-color: paleturquoise;">
+            But those plastic soda rings have over a hundred years to go. While we're in the ocean; plastic fishing line has another 300 years to go — close to twice the length we've covered so far.
+          </div>
+
+
+          <div class="plasticUnits" style="width: 100px; background-color: paleturquoise;">
+          </div>
+
+
 
           <!-- PLASTICS 3 -->
-          <div class="plasticUnits" style="width: 200px;">
 
-            <p>If they are in the ocean, that means they are in fish, who ingest the microplastics, which leach into them as well...</p>
-          </div>
-          <div class="plasticUnits" style="width: 1600px;">
-            <img style="object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/SchoolFish.png">
-          </div>
-          <div class="plasticUnits" style="width: 1400px;">
-            <img style="width: 1400px; height: 180px; object-fit:none; object-position: 0px 0px;" src="SIxD_FP_Art/MicroPlusBag.png">
-          </div>
-
-          <div class="plasticUnits" style="width: 400px;">
-            <p>Microplastics are also found in birds, who pick them up and feed them to their young.</p>
+          <div class="plasticUnits" style="width: 750px; background-color: none; background-image: linear-gradient(to right, paleturquoise, lightgreen);">
           </div>
 
 
-          <!-- PLASTICS 4 -->
-          <div class="plasticUnits" style="width: 250px;">
-            In 2016, a shield was placed over the Chernobyl nuclear reactor in Russia to contain the radiation from that 1986 accident.
+          <div class="plasticUnits" style="width: 350px; background-color: lightgreen;">
+            Somewhere within your lifetime — July 2019, to be more precise — a concrete-and-steel arch was completed over the Chernobyl nuclear reactor to contain the radiation from that 1986 accident.
+
           </div>
 
-          <div class="plasticUnits" style="width: 500px;">
+          <div class="plasticUnits" style="width: 500px; background-color: lightgreen;">
             <img style="width: 700px; height: 180px; object-fit:none; object-position: 10px 40px;" src="SIxD_FP_Art/Chernobyl.png">
           </div>
 
+          <div class="plasticUnits" style="width: 300px; background-color: lightgreen;">
+            It is expected to last a minimum of 100 years — a fair amount of time for humans to plan ahead
+          </div>
+
+          <div class="plasticUnits" style="width: 150px; background-color: lightgreen;">
+          </div>
+
+          <div class="plasticUnits" style="width: 250px; background-color: lightgreen;">
+            We passed 100 years in this timeline approximately 9,500 pixels back (about 10 screens, if you are viewing on a laptop).
+          </div>
+
+          <div class="plasticUnits" style="width: 250px; background-color: lightgreen;">
+            One researcher said it might last 300 years…
+            That was only 1,800 pixels back (close to 2 screens). </div>
+
+          <div class="plasticUnits" style="width: 250px; background-color: lightgreen;">
+
+
+            That's more than 4 times your lifespan…
+          </div>
+
+          <div class="plasticUnits" style="width: 650px; background-color: lightgreen;">
+          </div>
+
+
+          <div class="plasticUnits" style="width: 150px; background-color: lightgreen;">
+            <img style="width: 1400px; height: 180px; object-fit:none; object-position: 0px 0px; position: relative; z-index: 0;" src="SIxD_FP_Art/laterRing.png">
+          </div>
+
+
+
+          <!-- PLASTICS 4 -->
+          <div class="plasticUnits" style="width: 250px; background-color: lightgreen;">
+            Meanwhile, that soda can ring hasn’t decomposed until now…<br>
+            And your water bottle still has about 50 years to go…
+          </div>
+
+          <div class="plasticUnits" style="width: 350px; background-color: lightgreen;">
+            They each will have outlasted The Ming Dynasty, the Incan Empire and The Ashanti Empire…
+
+            And exceeded the current ages of more than 72% of the existing member states of the United Nations.
+          </div>
+
+
+          <div class="plasticUnits" style="width: 2150px; background-color: none; background-image: linear-gradient(to right, lightgreen, gold);">
+
+          </div>
+
           <div class="plasticUnits" style="width: 250px;">
-            It is designed to last 400 years — a remarkable amount of time for humans to plan ahead.
+            It can happen in long-term thinking — like that arch in Chernobyl…
+
           </div>
 
-          <div class="plasticUnits" style="width: 200px;">
+          <div class="plasticUnits" style="width: 600px;">
+
+
           </div>
 
-          <div class="plasticUnits" style="width: 250px;">
-            That was about 1200 pixels (33.3 years) ago…
-          </div>
 
-          <div class="plasticUnits" style="width: 500px;">
-            <!-- spacer -->
-          </div>
-
-          <div class="plasticUnits" style="width: 250px;">
-            And we're not yet halfway through this timeline…
-          </div>
-
-          <div class="plasticUnits" style="width: 1400px;">
-          </div>
-
-        <!-- PLASTICS 5 -->
-        <div class="plasticUnits" style="width: 3600px;">
-        </div>
-
-        <!-- PLASTICS 6 -->
-        <div class="plasticUnits" style="width: 3600px;">
-        </div>
-
-        <!-- PLASTICS 7 -->
-        <div class="plasticUnits" style="width: 3600px;">
-        </div>
-
-        <!-- PLASTICS 8 -->
-        <div class="plasticUnits" style="width: 3600px;">
-        </div>
-
-        <!-- PLASTICS 9 -->
-        <div class="plasticUnits" style="width: 3600px;">
-        </div>
-
-        <!-- <h class="bHead">Plastic Time</h> -->
-        <!-- <p class="subIntro">Vestibulum purus eros, ornare at magna ac, ornare efficitur felis. Suspendisse potenti. Suspendisse potenti. Phasellus ultrices nulla eget felis dapibus dignissim. Donec in est vitae.
+          <!-- <h class="bHead">Plastic Time</h> -->
+          <!-- <p class="subIntro">Vestibulum purus eros, ornare at magna ac, ornare efficitur felis. Suspendisse potenti. Suspendisse potenti. Phasellus ultrices nulla eget felis dapibus dignissim. Donec in est vitae.
       </p> -->
+        </div>
+
+        <!-- end of time container -->
+      </div>
+      <div class="timeAxis" id="ticks">
+        <div class="bHead">Years</div>
       </div>
 
-      <!-- end of time container -->
-    </div>
-    <div class="timeAxis" id="ticks">
-      <div class="bHead">Years</div>
+
+
+
+
+
+      <!-- end of larger container -->
     </div>
 
-    <!-- end of larger container -->
-  </div>
+    <!-- <hr> -->
 
-  <!-- <hr> -->
+    <div class="intro" id="Outro" style="padding: 12px 30px 18px 102px;">
+      <p>While we have covered 500 years, this is just a quick overview of some of the issues related to different packaging, and should not be read as definitive on all counts. Nor should it be read as fatalistic. It’s an opportunity to think and
+        get more informed so that the next 500 years are a little more promising. </p>
+
+      <p>If you are interested in learning more, the following sites and articles heavily informed this timeline and contain even more information. Others provide insight into how you can make a difference the next time you need a snack.
+      </p>
+      <p>[Sources and Further Reading]
+      </p>
+    </div>
 
 
   </div>
@@ -445,7 +701,7 @@ We may need this space…<br></div>
   // Time axis at bottom
   // Declare chart width and height
 
-  const svgW = 36000;
+  const svgW = 18000;
   const svgH = 12;
 
 
@@ -476,7 +732,7 @@ We may need this space…<br></div>
 
   // Create responsive scales for x and y
   const newXScale = d3.scaleLinear()
-    .domain([0, 1000])
+    .domain([0, 500])
     .range([0, svgW]);
 
   // const newYScale = d3.scaleLinear()
@@ -488,7 +744,7 @@ We may need this space…<br></div>
 
   const bottomAxis = d3.axisBottom()
     .scale(newXScale)
-    .ticks(1000)
+    .ticks(500)
     .tickSize(12);
   // .tickValues([0, 100, 300, 500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20000, 21000, 22000, 23000, 24000, 25000, 26000, 27000, 28000, 29000, 30000, 31000, 32000, 33000, 34000, 35000, 36000]);
   // .ticks(100);
@@ -503,7 +759,7 @@ We may need this space…<br></div>
 
   const ticked = d3.select("#ticks")
     .append("svg")
-    .attr("width", 36400)
+    .attr("width", 18400)
     .attr("height", 30);
 
 
