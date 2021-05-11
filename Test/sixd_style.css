@@ -56,7 +56,7 @@
   .credit {
     font-size: 11px;
     margin-block-end: 0em;
-    /* padding: 0px 0px 0px 30px; */
+    padding: 6px 0px 0px 30px;
     color: snow;
     display: table-row;
     position: fixed;
@@ -112,6 +112,7 @@
     height: 18px;
   }
 
+
   /* this holds the timerow and units */
   .timeline {
     /* margin-top: 30px; */
@@ -125,6 +126,21 @@
     /* display: flex;
         flex-direction: row; */
   }
+
+  .axisline {
+    /* margin-top: 30px; */
+    /* flex: 0 0 auto; */
+    /* width: 10000px; */
+    /* font-family: sans-serif; */
+    overflow: visible;
+    display: inline-flex;
+    border-bottom: 1px solid maroon;
+    padding: 5px 0px 5px 0px;
+    /* display: flex;
+        flex-direction: row; */
+  }
+
+
 
   /* this holds the intro and timeunits */
   .timeRow {
@@ -141,7 +157,7 @@
 
   /* this is the default sitting inside the timeline - gets adjusted by IDs */
   .timeUnits {
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     box-sizing: border-box;
     display: block;
     width: 600px;
@@ -166,6 +182,15 @@
 }
 .subMulti{
   flex: 1 1;
+}
+
+.sources p{
+margin-block-end: 1em;
+}
+
+.sources a{
+  color: maroon;
+  text-decoration: none;
 }
 
 
@@ -257,6 +282,7 @@
     height: 30px;
     padding: 0 0 0 0;
   }
+
   .axis path{
     stroke: maroon;
   }
