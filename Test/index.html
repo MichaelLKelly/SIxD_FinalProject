@@ -778,7 +778,7 @@ https://www.world-aluminium.org/media/filer_public/2020/10/20/wa_factsheet_final
   const bottomAxis = d3.axisBottom()
     .scale(newXScale)
     .ticks(500)
-    .tickSize(12);
+    .tickSize(15);
   // .tickValues([0, 100, 300, 500, 1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000, 14000, 15000, 16000, 17000, 18000, 19000, 20000, 21000, 22000, 23000, 24000, 25000, 26000, 27000, 28000, 29000, 30000, 31000, 32000, 33000, 34000, 35000, 36000]);
   // .ticks(100);
 
@@ -813,7 +813,7 @@ https://www.world-aluminium.org/media/filer_public/2020/10/20/wa_factsheet_final
   //Implement bottom axis
   ticked.append("g")
     .attr("class", "axis") //creates a class which we will use for styling
-    .attr("transform", "translate(10,0)") //this makes the axis appear at the bottom of the chart--pushes it down to the bottom
+    .attr("transform", "translate(10,-5)") //this makes the axis appear at the bottom of the chart--pushes it down to the bottom
     // .attr("transform", "translate(0," + (svgH -padding) + ")") //this makes the axis appear at the bottom of the chart--pushes it down to the bottom
     .call(bottomAxis); // now we are calling our the bottomAxis function that we generated above
 
